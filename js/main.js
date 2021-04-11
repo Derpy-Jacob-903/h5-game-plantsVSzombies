@@ -7,7 +7,7 @@
 class Main {
   constructor () {
     let m = {
-      allSunVal: 200,                           // 阳光总数量
+      allSunVal: 50,                           // 阳光总数量
       loading: null,                            // loading 动画对象
       sunnum: null,                             // 阳光实例对象
       cars: [],                                 // 实例化除草车对象数组
@@ -27,13 +27,13 @@ class Main {
         x: 0,                                   // x 轴坐标
         y: 0,                                   // y 轴坐标
         position: [
-          {name: 'sunflower', row: 1, sun_val: 50, timer_spacing: 5 * 1000},
-          {name: 'wallnut', row: 2, sun_val: 50, timer_spacing: 12 * 1000},
-          {name: 'peashooter', row: 3, sun_val: 100, timer_spacing: 7 * 1000},
-          {name: 'repeater', row: 4, sun_val: 150, timer_spacing: 10 * 1000},
-          {name: 'gatlingpea', row: 5, sun_val: 200, timer_spacing: 15 * 1000},
-          {name: 'chomper', row: 6, sun_val: 200, timer_spacing: 15 * 1000},
-          {name: 'cherrybomb', row: 7, sun_val: 250, timer_spacing: 25 * 1000},
+          {name: 'sunflower', row: 1, sun_val: 25, timer_spacing: 5 * 1000},
+          {name: 'wallnut', row: 2, sun_val: 25, timer_spacing: 12 * 1000},
+          {name: 'peashooter', row: 3, sun_val: 50, timer_spacing: 7 * 1000},
+          {name: 'repeater', row: 4, sun_val: 75, timer_spacing: 10 * 1000},
+          {name: 'gatlingpea', row: 5, sun_val: 100, timer_spacing: 15 * 1000},
+          {name: 'chomper', row: 6, sun_val: 100, timer_spacing: 15 * 1000},
+          {name: 'cherrybomb', row: 7, sun_val: 125, timer_spacing: 25 * 1000},
         ]
       },
       plants: [],                               // 实例化植物对象数组
@@ -60,7 +60,7 @@ class Main {
       sunTimer: null,                            // 全局定时器，用于控制全局定时生成阳光
       sunTimer_difference: 20,                   // 定时生成阳光时间差值（单位：秒）
       zombieTimer: null,                         // 全局定时器，用于控制全局定时生成僵尸
-      zombieTimer_difference: 12,                // 定时生成僵尸时间差值（单位：秒）
+      zombieTimer_difference: 9,                // 定时生成僵尸时间差值（单位：秒）
       game: null,                                // 游戏引擎对象
       fps: 60,
     }
@@ -104,9 +104,9 @@ class Main {
           top = '-100px',
           keyframes1 = [
             { transform: 'translate(0,0)', opacity: 0 },
-            { offset: .5,transform: 'translate(0,300px)', opacity: 1 },
-            { offset: .75,transform: 'translate(0,300px)', opacity: 1 },
-            { offset: 1,transform: 'translate(-'+ (left - 110) +'px,50px)',opacity: 0 }
+            { offset: .25,transform: 'translate(0,300px)', opacity: 1 },
+            { offset: .375,transform: 'translate(0,300px)', opacity: 1 },
+            { offset: .5,transform: 'translate(-'+ (left - 110) +'px,50px)',opacity: 0 }
           ]
       document.getElementsByClassName('systemSun')[0].animate(keyframes1,keyframesOptions)
       setTimeout(function () {
