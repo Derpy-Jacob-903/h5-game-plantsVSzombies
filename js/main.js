@@ -28,12 +28,12 @@ class Main {
         y: 0,                                   // y 轴坐标
         position: [
           {name: 'sunflower', row: 1, sun_val: 25, timer_spacing: 5 * 1000},
-          {name: 'wallnut', row: 2, sun_val: 25, timer_spacing: 12 * 1000},
-          {name: 'peashooter', row: 3, sun_val: 50, timer_spacing: 7 * 1000},
-          {name: 'repeater', row: 4, sun_val: 75, timer_spacing: 10 * 1000},
-          {name: 'gatlingpea', row: 5, sun_val: 100, timer_spacing: 15 * 1000},
-          {name: 'chomper', row: 6, sun_val: 100, timer_spacing: 15 * 1000},
-          {name: 'cherrybomb', row: 7, sun_val: 125, timer_spacing: 25 * 1000},
+          {name: 'wallnut', row: 2, sun_val: 25, timer_spacing: 30 * 1000},
+          {name: 'peashooter', row: 3, sun_val: 50, timer_spacing: 5 * 1000},
+          {name: 'repeater', row: 4, sun_val: 87.5, timer_spacing: 5 * 1000},
+          {name: 'gatlingpea', row: 5, sun_val: 87.5, timer_spacing: 5 * 1000},
+          {name: 'chomper', row: 6, sun_val: 87.5, timer_spacing: 15 * 1000},
+          {name: 'cherrybomb', row: 7, sun_val: 62.5, timer_spacing: 30 * 1000},
         ]
       },
       plants: [],                               // 实例化植物对象数组
