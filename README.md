@@ -1,6 +1,6 @@
-## h5小游戏—植物大战僵尸v1.18
+## h5 Mini Game-Plants vs. Zombies v1.18
 
-本项目是利用原生js实现的h5小游戏，在实现时使用了大量es6语法，对于es6语法不太熟悉的小伙伴可以先查阅相关资料了解一下
+This project is a small h5 game implemented with native js. A lot of es6 grammar is used in the implementation. For those who are not familiar with es6 grammar, please check the relevant information first.
 
 **demo**：[线上地址](https://yangyunhe369.github.io/h5-game-plantsVSzombies/)
 
@@ -11,10 +11,10 @@
 ![](images/screenshot1.png)
 
 ## 已完成功能：
-- [x] 绘制游戏场景：背景、阳光计分板、植物卡片（用于放置植物）、植物（6种）、僵尸（1种）
-- [x] 植物和僵尸的攻击判定、死亡判定
-- [x] 角色动画由一帧一帧图片不停切换绘制实现，可绘制流畅动画效果
-- [x] 角色动画根据角色状态自动切换，植物动画包括（普通形态、攻击形态），僵尸动画包括（普通形态、移动形态、攻击形态、濒死形态、死亡形态）
+- [x] Draw the game scene: background, sunshine scoreboard, plant card (for placing plants), plants (6 types), zombies (1 type)
+- [x] Attack judgment and death judgment of plants and zombies
+- [x] The character animation is realized by continuously switching and drawing frame by frame, which can draw smooth animation effects
+- [x] The character animation automatically switches according to the character state. The plant animation includes (normal form, attack form), and the zombie animation includes (normal form, moving form, attack form, dying form, death form)
 - [x] 阳光自动生成、植物放置需消耗阳光，僵尸随机生成
 - [x] 游戏包含僵尸、植物独立胜利条件判定
 - [x] 游戏状态：Loading、游戏运行、游戏暂停、游戏结束（玩家胜利）、游戏结束（僵尸胜利）
